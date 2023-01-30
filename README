@@ -1,0 +1,5 @@
+ncmake is Nathans C project Maker
+If you type in (Assuming you installed the program): "ncmake test"
+that test directory will have a .gitignore, Makefile, and main.c file
+automatically setup for you.
+That's all this program does, not a lot, but nonetheless very useful.
