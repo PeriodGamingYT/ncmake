@@ -1,16 +1,12 @@
+clean:
+	rm -f ncmake
+
 make: main.c
 	clear
-	gcc -o main main.c
-
-clean:
-	rm -f main
-
-run:
 	make clean
-	make
-	./main
+	gcc -o ncmake main.c
 
-test: main
-	rm -rf example
-	./main example
-	ls -a example
+# NOTE: This only works on unix-like systems!
+install:
+	make
+	sudo cp ncmake /usr/local/bin
