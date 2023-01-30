@@ -1,12 +1,10 @@
+make: main.c
+	clear
+	gcc -o ncmake main.c
+
 clean:
 	rm -f ncmake
 
-make: main.c
-	clear
-	make clean
-	gcc -o ncmake main.c
-
 # NOTE: This only works on unix-like systems!
 install: ncmake
-	make
 	sudo cp ncmake /usr/local/bin

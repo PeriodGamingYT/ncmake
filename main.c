@@ -22,7 +22,7 @@ void create_file(char *name, char *contents) {
 
 int main(int argc, char *argv[]) {
 	if(argc != 2) {
-		die("Usage: ncmake nonexistant_directory");
+		die("Usage: ncmake nonexistent_directory");
 	}
 
 	struct stat dir_stat = { 0 };
