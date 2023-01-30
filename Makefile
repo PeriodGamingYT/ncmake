@@ -7,6 +7,6 @@ make: main.c
 	gcc -o ncmake main.c
 
 # NOTE: This only works on unix-like systems!
-install:
+install: ncmake
 	make
 	sudo cp ncmake /usr/local/bin
