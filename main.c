@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 	mkdir(argv[1], 0777);
 	chdir(argv[1]);
 	create_file(".gitignore", "main");
-	create_file("Makefile", "make: main.c\n\tgcc -o main main.c\n\nclean:\n\trm -f main\n\nrun:\n\tmake clean\n\tmake\n\tclear\n\t./main\n");
+	create_file("makefile", "make: main.c\n\tgcc -o main main.c\n\nclean:\n\trm -f main\n\nrun:\n\tmake clean\n\tmake\n\tclear\n\t./main\n");
 	create_file("main.c", "#include <stdio.h>\n\nint main() {\n\tprintf(\"It Works!\\n\");\n\treturn 0;\n}\n");
 	return 0;
 }
